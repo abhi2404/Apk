@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+
+
+    <RelativeLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dashboard"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"
+            android:layout_marginBottom="3dp"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_exit_to_app_24"
+            android:background="#fff"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:clickable="true"
+            android:focusable="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="46dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="7dp"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:padding="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="40dp">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Course Types :"
+            android:textColor="#FFB23A"
+            android:textSize="10sp" />
+    
+
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_marginTop="3dp"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:id="@+id/select_cour_type"
+            android:orientation="horizontal"
+            android:background="@drawable/border">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(All Selected)"
+                android:textStyle="italic"
+                android:id="@+id/selected_cour"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/drop1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_baseline_expand_more_24"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Branch Types :"
+            android:textColor="#FFB23A"
+            android:textSize="10sp" />
+
+
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_marginTop="3dp"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:id="@+id/select_branch_type"
+            android:orientation="horizontal"
+            android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(All Selected)"
+            android:textStyle="italic"
+            android:id="@+id/selected_branch"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drop2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/ic_baseline_expand_more_24"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Semester Types :"
+            android:textColor="#FFB23A"
+            android:textSize="10sp" />
+
+
+        <RelativeLayout
+            android:layout_marginTop="3dp"
+            android:clickable="true"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:id="@+id/select_Sem_type"
+            android:orientation="horizontal"
+            android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(All Selected)"
+            android:textStyle="italic"
+            android:id="@+id/selected_sem"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drop3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/ic_baseline_expand_more_24"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Section Types :"
+            android:textColor="#FFB23A"
+            android:textSize="10sp" />
+
+
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_marginTop="3dp"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:id="@+id/select_sec_type"
+            android:orientation="horizontal"
+            android:background="@drawable/border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(All Selected)"
+            android:textStyle="italic"
+            android:id="@+id/selected_sec"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drop4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/ic_baseline_expand_more_24"/>
+        </RelativeLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="SUBMIT"
+                    android:textSize="21sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="40dp"
+                    android:paddingTop="10dp"
+                    android:gravity= "center_horizontal"
+                    android:textAlignment="center"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/button"/>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
